@@ -1,9 +1,7 @@
 const promoApplication = () => {
 
-    
+    let seasonalPromo = document.querySelector("#sesaonal-promo")
     let isPromoApplied = false;
-
-
 
     const changeTheme = () => {
         isPromoApplied = !isPromoApplied
@@ -15,5 +13,14 @@ const promoApplication = () => {
             document.querySelector("#seasonal-promo-img").setAttribute("src", "./assets/images/Pumpkin-Spice-Latte-1-2.jpg")
         }
     }
+
+    seasonalPromo.addEventListener("click", ()=> {
+        changeTheme()
+    })
+
+
+
 }
 // &&(AND) ||(OR) !(NOT)
+
+promoApplication()
